@@ -7,7 +7,6 @@
     <LatestJournals :journals="$page.journals.edges" />
   </Layout>
 </template>
-
 <page-query>
 query Posts {
 	projects: allProjectPost {
@@ -33,7 +32,6 @@ query Posts {
   }
 }
 </page-query>
-
 <script>
 import Hero from "@/components/Hero"
 import ProjectsGrid from "@/components/ProjectsGrid"
