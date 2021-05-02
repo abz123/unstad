@@ -35,6 +35,7 @@ query Posts {
 <script>
 import Hero from "@/components/Hero"
 import ProjectsGrid from "@/components/ProjectsGrid"
+//import ProjectsGrid from "../components/ProjectsGrid.vue"
 import LatestJournals from "@/components/LatestJournals"
 
 export default {
