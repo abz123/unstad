@@ -2,11 +2,11 @@
 label: Scratch
 hide_body: false
 fields:
-- name: scratch
+- name: title
   type: text
   config:
     required: false
-  label: Scratch
+  label: Title
 - name: date
   type: datetime
   label: Date
