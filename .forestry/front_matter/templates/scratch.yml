@@ -1,4 +1,18 @@
 ---
 label: Scratch
 hide_body: false
-fields: []
+fields:
+- name: scratch
+  type: text
+  config:
+    required: false
+  label: Scratch
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
