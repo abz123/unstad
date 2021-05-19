@@ -16,3 +16,12 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- name: enter_location
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Enter location
