@@ -1,4 +1,9 @@
 ---
 label: kjhkhkhj
 hide_body: false
-fields: []
+fields:
+- name: new_label
+  type: text
+  config:
+    required: false
+  label: New label
