@@ -11,13 +11,16 @@
                 </g-link>
             </div>
             <nav class="nav right">
-                <g-link class="nav__link" to="/journal">Journal</g-link>
-                <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+              <g-link class="nav__link" to="/journal">
+                Journal
+              </g-link>
+              <g-link class="nav__link" to="/contact">
+                Say Hi!
+              </g-link>
             </nav>
-        </div>
+          </div>
     </header>
 </template>
-
 <script>
 export default {
   data() {
@@ -28,7 +31,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .header {
     position: relative;
