@@ -1,5 +1,6 @@
 <template>
-  <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
+  <div class="layout" 
+    :class="{ 'sticky-header': $route.path === '/' }">
     <Header />
     <slot/>
     <Footer />

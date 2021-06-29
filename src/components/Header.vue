@@ -14,13 +14,28 @@
               <g-link class="nav__link" to="/journal">
                 Journal
               </g-link>
-              <g-link class="nav__link" to="/contact">
-                Say Hi!
+              <g-link class="nav__link"
+                v-for="edge in $static.infos.edges"
+                :to="edge.node.path">
+                <!--Say Hi!-->
+                {{edge.node.link_text}} 
               </g-link>
             </nav>
           </div>
     </header>
 </template>
+<static-query>
+  query ContactInfo{
+    infos: allInfo{
+      edges{
+        node{
+          link_text
+          path
+        }
+      }
+    }
+} 
+</static-query>
 <script>
 export default {
   data() {
