@@ -35,8 +35,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        typeName: "Info",
-        path: "info/**/*.md",
+        typeName: "Contact",
+        path: "contact/**/*.md",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

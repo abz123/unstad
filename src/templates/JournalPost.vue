@@ -3,21 +3,32 @@
     <div class="journal">
       <div class="container journal-container">
         <div class="journal-header">
-          <h1 v-html="$page.post.title" class="journal-title" />
+          <!--<h1 v-html="$page.post.title" 
+            class="journal-title" />-->
+          <h1 class="journal-title">
+            {{$page.post.title}}
+          </h1>
+
           <div class="journal-meta">
             <div class="journal-author">
               <span class="label">Author</span>
+              <!--
               <span class="author-name" 
                 v-text="$page.post.author" 
               />
+              -->
+              <span class="author-name">
+                {{$page.post.author}}
+              </span> 
             </div>
             <div class="journal-date">
               <span class="label">Date</span>
-              <div v-text="$page.post.date"/>
+              <!--<div v-text="$page.post.date"/>-->
+              <div>{{$page.post.date}}</div>
             </div>
             <div class="journal-time">
               <span class="label">Time</span>
-              <span>{{ $page.post.timeToRead }} min read</span>
+              <span>{{$page.post.timeToRead}} min read</span>
             </div>
           </div>          
         </div>

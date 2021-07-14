@@ -1,16 +1,19 @@
 <template>
     <footer class="footer">
         <div class="container">
-            <span v-html="settings.footer" />
+            <span>{{theme.footer}}</span>
         </div>
     </footer>
 </template>
 
 <script>
+import theme from '../../data/theme.json'
+
 export default {
     data() {
         return {
-            settings: require("../../data/theme.json")
+          //settings: require("../../data/theme.json")
+          theme
         }
     }
 }

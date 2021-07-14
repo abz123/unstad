@@ -2,31 +2,53 @@
   <Layout>
     <div class="container">
       <div class="contact-header">
-        <h1 class="contact-title">Say hi!</h1>
-        <p>Please leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>
+        <!--<p>Please leave me a note with any questions 
+          you might have, I'll get back to you as 
+          soon as possible.
+        </p>-->
+        <h1 class="contact-title">{{$page.contact.intro}}</h1>
+        <div v-html="$page.contact.content" />
       </div>
       <form class="contact-form" name="contact">
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
+            <label for="name" class="label">
+              {{$page.contact.name}}
+            </label>
             <input type="text" name="name" />
           </div>
           <div>
-            <label for="email" class="label">Your email</label>
+            <label for="email" class="label">
+              {{$page.contact.email}}
+            </label>
             <input type="email" name="email" />
           </div>
         </div>
         <div class="message">
-          <label for="message" class="label">Message</label>
+          <label for="message" class="label">
+            {{$page.contact.message}}
+          </label>
           <textarea name="message"></textarea>
         </div>
-        <button class="button">Submit form</button>
+        <button class="button">
+          {{$page.contact.form}}
+        </button>
       </form>
     </div>
   </Layout>
 </template>
 <page-query>
-  
+  query ContactId{
+    contact(path: "/contact/contact"){
+      path
+      intro
+      name
+      email
+      message
+      form
+      content
+    }
+  }
 </page-query>
 <script>
   export default {}

@@ -2,46 +2,41 @@
     <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
         <div class="container">
             <div class="left">
-                <g-link :to="{ name: 'home' }" class="home-link">
-                    <img 
-                        src="../../static/logo.svg"
-                        :alt="settings.site_name" 
-                        class="logo"
-                    />
-                </g-link>
+              <g-link :to="{ name: 'home' }" 
+                class="home-link">
+                  <img 
+                    src="../../static/logo.svg"
+                    :alt="theme.site_name" 
+                    class="logo"
+                  />
+              </g-link>
             </div>
             <nav class="nav right">
-              <g-link class="nav__link" to="/journal">
-                Journal
+              <!--link /journal - replaced -->
+              <g-link class="nav__link" 
+                v-bind:to="theme.head_lnk_journal"
+              >
+                <!--Journal-->
+                {{theme.head_lnk_journal_txt}}
               </g-link>
-              <g-link class="nav__link"
-                v-for="edge in $static.infos.edges"
-                :to="edge.node.path">
-                <!--Say Hi!-->
-                {{edge.node.link_text}} 
+              <g-link class="nav__link" 
+                v-bind:to="theme.head_lnk_contact">
+                {{theme.head_lnk_contact_txt}}
               </g-link>
             </nav>
           </div>
     </header>
 </template>
-<static-query>
-  query ContactInfo{
-    infos: allInfo{
-      edges{
-        node{
-          link_text
-          path
-        }
-      }
-    }
-} 
-</static-query>
 <script>
+import theme from '../../data/theme.json' 
+
 export default {
   data() {
     return {
-        logo: require("../../static/logo.svg"),
-        settings: require("../../data/theme.json")
+        //logo: require("../../static/logo.svg"),
+        //settings: require("../../data/theme.json")
+        //theme: theme
+        theme
     }
   }
 }
