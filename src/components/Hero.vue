@@ -1,17 +1,29 @@
 <template>
   <div class="hero">
-    <h1 class="hero-title" v-html="settings.hero_title" />
-    <h2 class="hero-subtitle" 
-      v-html="settings.hero_subtitle" />
+    <!--<h1 class="hero-title" 
+      v-html="settings.hero_title" />-->
+    <!--<h2 class="hero-subtitle"
+      v-html="settings.hero_subtitle" />-->
+
+    <h1 class="hero-title">{{$static.hero.head1}}</h1>
+    <h2 class="hero-subtitle">{{$static.hero.head2}}</h2>
   </div>
 </template>
+<static-query>
+query{
+  hero(path: "/hero/hero"){
+    head1
+    head2
+  }
+}
+</static-query>
 <script>
   export default {
-    data() {
-      return {
-        settings: require("../../data/theme.json")
-      }
-    }
+  //data() {
+    //return {
+    //   settings: require("../../data/theme.json")
+    // }
+    //}
   }
 </script>
 <style>
