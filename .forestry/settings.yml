@@ -5,6 +5,8 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: heading
+  label: Data
+- type: heading
   label: Content
 - type: document
   path: contact/contact.md
