@@ -23,11 +23,11 @@ sections:
   match: "**/*.md"
   templates:
   - journal
+- type: heading
+  label: Data
 - type: document
   path: data/theme.json
   label: Theme config
-- type: heading
-  label: Data
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
