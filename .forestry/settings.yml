@@ -5,7 +5,7 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: document
-  path: contact/**/*.md
+  path: contact/contact.md
   label: Contact
 - type: directory
   path: projects
