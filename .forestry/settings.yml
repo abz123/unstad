@@ -9,6 +9,7 @@ sections:
 - type: document
   path: contact/contact.md
   label: Contact
+  read_only: true
 - type: directory
   path: projects
   label: Projects
