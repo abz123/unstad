@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: contact/contact
+  path: contact/contact.md
   label: Contact
 - type: directory
   path: projects
