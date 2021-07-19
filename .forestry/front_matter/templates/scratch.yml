@@ -1,6 +1,7 @@
 ---
 label: Scratch
 hide_body: false
+display_field: country_select
 fields:
 - name: title
   type: text
