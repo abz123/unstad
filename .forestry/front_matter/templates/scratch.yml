@@ -1,6 +1,7 @@
 ---
 label: Scratch
 hide_body: false
+display_field: country_select
 fields:
 - name: title
   type: text
@@ -16,6 +17,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+  hidden: true
 - name: enter_location
   type: textarea
   default: ''
@@ -25,3 +27,15 @@ fields:
     schema:
       format: markdown
   label: Enter location
+- name: country_select
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Country select

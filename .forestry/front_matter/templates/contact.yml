@@ -1,0 +1,33 @@
+---
+label: Contact
+hide_body: false
+fields:
+- name: intro
+  type: text
+  config:
+    required: false
+  label: Intro
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
+- name: form
+  type: text
+  config:
+    required: false
+  label: Form
+- name: message
+  type: datetime
+  label: Message
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
