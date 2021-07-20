@@ -1,4 +1,9 @@
 ---
 label: Contact
 hide_body: false
-fields: []
+fields:
+- name: edit_value
+  type: text
+  config:
+    required: false
+  label: Edit value
