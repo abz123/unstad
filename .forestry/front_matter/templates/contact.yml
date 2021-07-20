@@ -23,13 +23,9 @@ fields:
     required: false
   label: Form
 - name: message
-  type: datetime
-  label: Message
-  description: ''
+  type: text
   config:
     required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+  label: Message
 pages:
 - contact/contact.md
