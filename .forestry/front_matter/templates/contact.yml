@@ -31,3 +31,5 @@ fields:
   config:
     required: false
   label: Title
+pages:
+- contact/contact.md
