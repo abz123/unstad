@@ -2,11 +2,6 @@
 label: Journal
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: Title@@@@~~~
-  config:
-    required: true
 - type: textarea
   name: excerpt
   label: Excerpt
@@ -35,5 +30,10 @@ fields:
     - Nichlas W. Andersen
   label: Author
   default: Nichlas W. Andersen
+- type: text
+  name: title
+  label: Title@@@@~~~
+  config:
+    required: true
 pages:
 - journal/macos-development-environment.md
