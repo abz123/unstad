@@ -38,7 +38,7 @@
   </Layout>
 </template>
 <page-query>
-  query ContactId{
+  query Contact{
     contact(path: "/contact/contact"){
       path
       intro

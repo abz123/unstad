@@ -1,7 +1,7 @@
 ---
-intro: Say hi!
-name: Your name
-email: Your email
+title: Say hi!
+name: Name
+email: Email
 message: Message
 form: Submit form
 ---
