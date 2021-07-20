@@ -7,3 +7,13 @@ fields:
   config:
     required: false
   label: Intro
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: email
+  type: text
+  config:
+    required: false
+  label: Email
