@@ -1,7 +1,7 @@
 ---
 name: Name
 email: Email
-message: Message
+message: 
 form: Submit form
 title: Say Hi!
 
