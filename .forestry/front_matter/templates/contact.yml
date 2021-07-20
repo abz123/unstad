@@ -17,13 +17,17 @@ fields:
   config:
     required: false
   label: Email
-- name: message
-  type: text
-  config:
-    required: false
-  label: Message
 - name: form
   type: text
   config:
     required: false
   label: Form
+- name: message
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Message
