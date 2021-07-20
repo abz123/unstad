@@ -40,7 +40,6 @@
 <page-query>
   query Contact{
     contact(path: "/contact/contact"){
-      path
       title
       name
       email
