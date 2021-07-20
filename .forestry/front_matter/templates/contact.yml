@@ -2,6 +2,11 @@
 label: Contact
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: name
   type: text
   config:
@@ -26,8 +31,3 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: title
-  type: text
-  config:
-    required: false
-  label: Title
