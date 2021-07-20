@@ -23,13 +23,9 @@ fields:
     required: false
   label: Form
 - name: message
-  type: textarea
-  default: ''
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
   label: Message
 pages:
 - contact/contact.md
