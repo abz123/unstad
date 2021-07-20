@@ -2,11 +2,11 @@
 label: Contact
 hide_body: false
 fields:
-- name: intro
+- name: title
   type: text
   config:
     required: false
-  label: Intro
+  label: Title
 - name: name
   type: text
   config:
