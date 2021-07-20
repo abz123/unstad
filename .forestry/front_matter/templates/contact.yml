@@ -22,3 +22,8 @@ fields:
   config:
     required: false
   label: Message
+- name: form
+  type: text
+  config:
+    required: false
+  label: Form
