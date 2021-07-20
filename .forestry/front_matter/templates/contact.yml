@@ -2,8 +2,8 @@
 label: Contact
 hide_body: false
 fields:
-- name: edit_value
+- name: intro
   type: text
   config:
     required: false
-  label: Edit value
+  label: Intro
