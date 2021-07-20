@@ -23,11 +23,11 @@ fields:
     required: false
   label: Form
 - name: message
-  type: textarea
-  default: ''
+  type: datetime
+  label: Message
+  description: ''
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Message
+    date_format: 
+    time_format: 
+    display_utc: false
