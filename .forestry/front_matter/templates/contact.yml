@@ -2,11 +2,6 @@
 label: Contact
 hide_body: false
 fields:
-- name: intro
-  type: text
-  config:
-    required: false
-  label: Intro
 - name: name
   type: text
   config:
@@ -17,3 +12,8 @@ fields:
   config:
     required: false
   label: Email
+- name: intro
+  type: text
+  config:
+    required: false
+  label: Intro
