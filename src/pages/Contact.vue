@@ -6,7 +6,7 @@
           you might have, I'll get back to you as 
           soon as possible.
         </p>-->
-        <h1 class="contact-title">{{$page.contact.intro}}</h1>
+        <h1 class="contact-title">{{$page.contact.title}}</h1>
         <div v-html="$page.contact.content" />
       </div>
       <form class="contact-form" name="contact">
@@ -41,7 +41,7 @@
   query Contact{
     contact(path: "/contact/contact"){
       path
-      intro
+      title
       name
       email
       message
