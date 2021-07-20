@@ -2,7 +2,8 @@
 title: Say Hi!
 name: Name
 email: Email
-message: Message 
+message: Long MessageLong MessageLong MessageLong MessageLong MessageLong MessageLong
+  Message
 form: Submit form
 
 ---
