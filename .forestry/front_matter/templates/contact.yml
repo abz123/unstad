@@ -2,6 +2,11 @@
 label: Contact
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: name
   type: text
   config:
@@ -22,10 +27,5 @@ fields:
   config:
     required: false
   label: Message
-- name: title
-  type: text
-  config:
-    required: false
-  label: Title
 pages:
 - contact/contact.md
