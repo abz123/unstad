@@ -2,7 +2,7 @@
 title: Say Hi!
 name: Name
 email: Email
-message: Message 
+message: Message
 form: Submit form
 
 ---
